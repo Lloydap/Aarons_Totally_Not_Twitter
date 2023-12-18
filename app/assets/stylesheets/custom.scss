@@ -23,6 +23,12 @@ textarea {
     margin-bottom: 10px;
 }
 
+/* Dropdown menu */
+
+.dropdown-menu.active {
+    display: block;
+}
+
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
@@ -75,6 +81,20 @@ footer {
     padding-top: 5px;
     border-top: 1px solid #eaeaea;
     color: #777;
+}
+
+@media (max-width: 800px) {
+    footer {
+        small {
+            display: block;
+            float: none;
+            margin-bottom: 1em;
+        }
+        ul {
+            float: none;
+            margin-left: 0;
+        }
+    }
 }
 
 footer a {
