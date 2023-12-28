@@ -18,7 +18,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      forwarding_url = sesison[:forwarding_url]
+      forwarding_url = session[:forwarding_url]
       reset_session
       log_in @user
       flash[:success] = "Welcome to Totally Not Twitter!"
